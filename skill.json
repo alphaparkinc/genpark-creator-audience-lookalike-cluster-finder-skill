@@ -1,0 +1,42 @@
+{
+  "name": "genpark-creator-audience-lookalike-cluster-finder-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator audience lookalike cluster finder analyzing audience demographic embeddings to discover high-affinity creator twins.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "creator-discovery",
+  "tags": [
+    "creator-lookalikes",
+    "audience-clustering",
+    "demographic-overlap",
+    "influencer-discovery",
+    "affinity-scoring"
+  ],
+  "inputs": {
+    "benchmark_creator_handle": {
+      "type": "string"
+    },
+    "min_audience_overlap_pct": {
+      "type": "number"
+    },
+    "target_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "cluster_analysis_id": {
+      "type": "string"
+    },
+    "matched_lookalike_creators": {
+      "type": "array"
+    },
+    "cluster_cohesion_score": {
+      "type": "number"
+    },
+    "audience_lookalike_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
